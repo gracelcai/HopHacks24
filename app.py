@@ -18,6 +18,13 @@ text = st.text_area("Please Enter your text")
 if st.button("Analyze the Sentiment"): 
   blob = TextBlob(text) 
   result = analyzer.get_results(blob, option)
+    
+  message_content = result.choices[0].message.content
+  content_trimmed = message_content[7:-3]
+  message_json = json.loads(content_trimmed)
   
+  st.write(f"Sent: {message_json["notify"]["yes"]}")
+
   for category, definition in data["categories"].items():
-    st.progress(result.choices[0].message.content[0], text=f"{category}")
+    percentage = message_json[f"{category}"]
+    st.progress(percentage, text=f"{category}: {percentage}%")
