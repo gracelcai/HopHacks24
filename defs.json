@@ -9,9 +9,9 @@
     },
 
     "modes": {
-        "meeting/test": "The user is in a meeting or test or other situation where they should not be bothered unless a message is an emergency or extremely urgent.",
-        "work/school": "The user is in a work or school setting and should only be notified for important matters, such as work and school related, or urgent messages.",
-        "social": "The user is engaged in a social environment. Less critical messages such as updates and plans are allowed, unless the message is extremely low urgency.",
-        "available": "The user is available to receive any message."
+        "Meeting": "The user is in a meeting or test or other situation where they should not be bothered unless a message is an emergency or extremely urgent.",
+        "Work": "The user is in a work or school setting and should only be notified for important matters, such as work and school related, or urgent messages.",
+        "Social": "The user is engaged in a social environment. Less critical messages such as updates and plans are allowed, unless the message is extremely low urgency.",
+        "Available": "Every message is allowed, regardless of urgency or necessity."
     }
 }
