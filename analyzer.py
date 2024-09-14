@@ -17,9 +17,11 @@ def load_messages():
             messages.append({"role": "user", "content": "Here is the definition for the mode {word}: {definition}"})
     return messages
 
-def get_results(text):
+def get_results(text, option):
     messages = load_messages()
-    messages.append({"role": "user", "content": "Here is the text message to be analyzed: {text}"})
+    data = json.load(open('defs.json', 'r'))
+    definition = data["modes"][option]
+    messages.append({"role": "user", "content": "Here is the text message to be analyzed: {text}. The user is currently in mode {option}: {definition}"})
     messages.append({"role": "user", "content": prompt})
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
