@@ -19,5 +19,7 @@ if st.button("Analyze the Sentiment"):
   blob = TextBlob(text) 
   result = analyzer.get_results(blob, option)
   
-  for category, definition in data["categories"].items():
-    st.progress(result.choices[0].message.content[0], text=f"{category}")
+  dic = result.choices[0].message.content
+  st.write(dic.urgency)
+  # for category, definition in data["categories"].items():
+    # st.progress(result.choices[0].message.content[0], text=f"{category}")
