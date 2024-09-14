@@ -2,7 +2,9 @@ from openai import OpenAI
 import os
 import json
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+# OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+f = open("key.txt", "r")
+OPENAI_API_KEY = f.read
 print(f"key:{OPENAI_API_KEY}")
 client = OpenAI(api_key=OPENAI_API_KEY)
 
