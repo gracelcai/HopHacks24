@@ -33,10 +33,14 @@ except Exception as ex:
     st.error(f"Unable to load model. Check the specified path: {model_path}")
     st.error(ex)
 
-st.table(table_maker.create())
 
 # st.sidebar.header("Image/Video Config")
 # source_radio = st.sidebar.radio(
 #     "Select Source", settings.SOURCES_LIST)
 
-helper.play_stored_video(confidence, model)
+col1, col2 = st.columns(2)
+with col1:
+    helper.play_stored_video(confidence, model)
+
+with col2:
+    st.table(table_maker.create())
