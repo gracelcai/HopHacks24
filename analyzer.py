@@ -1,7 +1,6 @@
 from openai import OpenAI
 import os
 import json
-from trying_random_bs import *
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY)
@@ -18,10 +17,8 @@ def load_messages():
 
 def get_results(text, option):
     messages = load_messages()
-    data = json.load(open('defs.json', 'r'))
-    definition = data["modes"][option]
-    messages.append({"role": "user", "content": "Here is the text message to be analyzed: {text}. The user is currently in mode {option}, which means {definition}"})
-    messages.append({"role": "user", "content": prompt})
+    messages.append({"role": "user", "content": "Here is the text message to be analyzed: {text}. The user is currently in mode {option}"})
+    messages.append({"role": "user", "content": "With those percentages, should a user in mode: {option} be notified? return only a json file with each field and their respective percentages and also yes or no and its confidence"})
     print(messages)
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
