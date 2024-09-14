@@ -1,0 +1,22 @@
+names:
+- Allis Tissue Forceps
+- Babcock Tissue Forceps
+- Crile Artery Forceps
+- Curved Mayo Scissors
+- DeBakey Dissector
+- Dressing Scissors
+- Gillies Toothed Dissector
+- Lahey Forceps
+- Mayo Needle Holder
+- Sponge Forceps
+- scalpel
+nc: 11
+roboflow:
+  license: CC BY 4.0
+  project: surgical-tool-detection-cx3g7
+  url: https://universe.roboflow.com/hophacks/surgical-tool-detection-cx3g7/dataset/1
+  version: 1
+  workspace: hophacks
+test: test/images
+train: train/images
+val: valid/images
