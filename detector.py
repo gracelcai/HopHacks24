@@ -38,7 +38,7 @@ except Exception as ex:
 # source_radio = st.sidebar.radio(
 #     "Select Source", settings.SOURCES_LIST)
 
-col1, col2 = st.columns(2)
+col1, col2 = st.columns([2,1])
 with col1:
     helper.play_stored_video(confidence, model)
 
