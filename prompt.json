@@ -1,0 +1,17 @@
+{
+    "categories": {
+        "urgency": "does it require immediate attention",
+        "necessity": "does the text sender need something",
+        "want": "does the text sender want something",
+        "informational": "is it just a normal text",
+        "planning": "is something being planned",
+        "work/school related": "self explanatory"
+    },
+
+    "modes": {
+        "meeting/test": "shouldn't be bothered unless emergnecy",
+        "work/school": "shouldn't be bothered unless important",
+        "social": "",
+        "available": "any message allowed"
+    }
+}
