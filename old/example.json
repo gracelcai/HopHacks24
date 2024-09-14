@@ -1,0 +1,31 @@
+{
+    "predictions": [{
+        "x": 234.0,
+        "y": 363.5,
+        "width": 160,
+        "height": 197,
+        "class": "hand",
+        "confidence": 0.943
+    }, {
+        "x": 504.5,
+        "y": 363.0,
+        "width": 215,
+        "height": 172,
+        "class": "hand",
+        "confidence": 0.917
+    }, {
+        "x": 1112.5,
+        "y": 691.0,
+        "width": 139,
+        "height": 52,
+        "class": "hand",
+        "confidence": 0.87
+    }, {
+        "x": 78.5,
+        "y": 700.0,
+        "width": 139,
+        "height": 34,
+        "class": "hand",
+        "confidence": 0.404
+    }]
+}
