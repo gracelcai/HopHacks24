@@ -18,8 +18,10 @@ text = st.text_area("Please Enter your text")
 if st.button("Analyze the Sentiment"): 
   blob = TextBlob(text) 
   result = analyzer.get_results(blob, option)
-  
-  dic = result.choices[0].message.content
-  st.write(dic.urgency)
+  message_content = result.choices[0].message['content']
+  # dic = result.choices[0].message.content
+
+  jsonresult = json.loads(message_content)
+  st.write(type(jsonresult))
   # for category, definition in data["categories"].items():
     # st.progress(result.choices[0].message.content[0], text=f"{category}")
