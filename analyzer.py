@@ -10,7 +10,6 @@ def load_messages():
     messages = [{"role": "system", "content": "You are a helpful assistant that evaluates text messages based on several categories to decide whether the receiver should be notified about it or not."}]
     with open('defs.json', 'r') as file:
         data = json.load(file)
-        print(data)
         for word, definition in data["categories"].items():
             messages.append({"role": "user", "content": "Here is the definition for texts that fall under the category of {word}: {definition}"})
         for word, definition in data["modes"].items():
@@ -21,8 +20,9 @@ def get_results(text, option):
     messages = load_messages()
     data = json.load(open('defs.json', 'r'))
     definition = data["modes"][option]
-    messages.append({"role": "user", "content": "Here is the text message to be analyzed: {text}. The user is currently in mode {option}: {definition}"})
+    messages.append({"role": "user", "content": "Here is the text message to be analyzed: {text}. The user is currently in mode {option}, which means {definition}"})
     messages.append({"role": "user", "content": prompt})
+    print(messages)
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=messages
