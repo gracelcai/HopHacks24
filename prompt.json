@@ -1,17 +1,17 @@
 {
     "categories": {
-        "urgency": "does it require immediate attention",
-        "necessity": "does the text sender need something",
-        "want": "does the text sender want something",
-        "informational": "is it just a normal text",
-        "planning": "is something being planned",
-        "work/school related": "self explanatory"
+        "urgency": "Does the message require an immediate response or action?",
+        "necessity": "Is the sender requesting something that they need?",
+        "want": "Is the user requesting something they want but don't necessarily need? These are optional and non urgent",
+        "informational": "Is this message purely informational? This could include a status update or news",
+        "planning": "Is the message related to scheduling or organizing an event, meeting, or other future activity?",
+        "work/school related": "Is the message related to work, school, or other academic/professional activities?"
     },
 
     "modes": {
-        "meeting/test": "shouldn't be bothered unless emergnecy",
-        "work/school": "shouldn't be bothered unless important",
-        "social": "",
-        "available": "any message allowed"
+        "meeting/test": "The user is in a meeting or test or other situation where they should not be bothered unless a message is an emergency or extremely urgent.",
+        "work/school": "The user is in a work or school setting and should only be notified for important matters, such as work and school related, or urgent messages.",
+        "social": "The user is engaged in a social environment. Less critical messages such as updates and plans are allowed, unless the message is extremely low urgency.",
+        "available": "The user is available to receive any message."
     }
 }
