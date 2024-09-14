@@ -1,7 +1,3 @@
-dataset
+/old
+.env
 env
-testout_simple.mp4
-__pycache__
-clips
-key.txt
-Surgical-Tool-Detection-1
