@@ -16,11 +16,10 @@ def get_results(text, option):
     
     defn = data["modes"][option]
     messages.append({"role": "user", "content": f"With those percentages, should a user in mode: \"{option}\" ({defn}) be notified? return only a json file with each grading category and their respective percentages and also yes or no and its confidence"})
-    
-    print(messages)
-    
+        
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=messages
     )
+    
     return completion
