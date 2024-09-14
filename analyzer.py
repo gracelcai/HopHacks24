@@ -1,7 +1,6 @@
 from openai import OpenAI
 import os
 import json
-from trying_random_bs import *
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY)
