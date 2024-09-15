@@ -9,12 +9,13 @@ def get_opinion_data(input, msg_json):
 
   with col1:
     if st.button('Agree'):
-      print("TEST SFJLSDFKSF")
-      st.write("poop")
-      print(concat_bs(input, msg_json, True))
+      pass
+      # st.write(concat_bs(input, msg_json, True))
   with col2:
     if st.button('Disagree'):
-      print(concat_bs(input, msg_json, False))
+      pass
+      # st.write(concat_bs(input, msg_json, False))
+  st.write(concat_bs(input, msg_json, False))
 
 def does_a_brotha_agree(agree, notify):
   if agree:
@@ -36,7 +37,7 @@ def get_input(option):
     message_content = result.choices[0].message.content
     content_trimmed = message_content[7:-3]
     message_json = json.loads(content_trimmed)
-    st.write(message_json)
+    
     st.write(f"Notify: {message_json['notify']}, Confidence: {message_json['confidence']}%")
 
     for category, definition in data["categories"].items():
