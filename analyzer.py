@@ -15,7 +15,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 # )
 
 client.fine_tuning.jobs.create(
-  training_file="file-NKZnnY5PgxPONSOt1NSFjcnY", 
+  training_file="file-4Q8by0qEiTXdfqRdzeQSk1nE", 
   model="gpt-4o-mini-2024-07-18"
 )
 

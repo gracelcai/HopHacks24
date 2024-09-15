@@ -1,0 +1,28 @@
+{"message": "Don't forget to pick up the groceries on your way home.", "results": {"urgency": 75, "necessity": 85, "want": 30, "informational": 60, "planning": 80, "career-related": 0, "notify": true, "confidence": 90}}
+{"message": "We need to submit the project by Friday.", "results": {"urgency": 80, "necessity": 90, "want": 50, "informational": 85, "planning": 100, "career-related": 100, "notify": true, "confidence": 95}}
+{"message": "Good morning! Have a great day.", "results": {"urgency": 5, "necessity": 10, "want": 95, "informational": 5, "planning": 0, "career-related": 0, "notify": false, "confidence": 80}}
+{"message": "The deadline for the assignment is extended by one week.", "results": {"urgency": 50, "necessity": 65, "want": 40, "informational": 90, "planning": 70, "career-related": 100, "notify": true, "confidence": 85}}
+{"message": "Hey, do you want to hang out later?", "results": {"urgency": 15, "necessity": 20, "want": 80, "informational": 20, "planning": 50, "career-related": 0, "notify": false, "confidence": 70}}
+{"message": "Can you please send me the notes from yesterday’s class?", "results": {"urgency": 40, "necessity": 55, "want": 60, "informational": 70, "planning": 50, "career-related": 100, "notify": true, "confidence": 85}}
+{"message": "The internet will be down for maintenance at 3 PM.", "results": {"urgency": 60, "necessity": 70, "want": 30, "informational": 90, "planning": 85, "career-related": 0, "notify": true, "confidence": 85}}
+{"message": "Let's meet for lunch around 12?", "results": {"urgency": 30, "necessity": 40, "want": 75, "informational": 50, "planning": 60, "career-related": 0, "notify": false, "confidence": 75}}
+{"message": "Your package has been delivered.", "results": {"urgency": 20, "necessity": 50, "want": 40, "informational": 85, "planning": 30, "career-related": 0, "notify": false, "confidence": 80}}
+{"message": "Can you help me with the presentation for tomorrow?", "results": {"urgency": 70, "necessity": 85, "want": 55, "informational": 60, "planning": 90, "career-related": 100, "notify": true, "confidence": 90}}
+{"message": "I'll be home around 6 PM.", "results": {"urgency": 10, "necessity": 30, "want": 50, "informational": 80, "planning": 40, "career-related": 0, "notify": false, "confidence": 75}}
+{"message": "Can you please send me the recipe?", "results": {"urgency": 30, "necessity": 40, "want": 70, "informational": 60, "planning": 30, "career-related": 0, "notify": false, "confidence": 70}}
+{"message": "The meeting has been rescheduled to 2 PM.", "results": {"urgency": 60, "necessity": 75, "want": 40, "informational": 85, "planning": 90, "career-related": 100, "notify": true, "confidence": 90}}
+{"message": "I'll take care of dinner tonight.", "results": {"urgency": 10, "necessity": 40, "want": 70, "informational": 30, "planning": 50, "career-related": 0, "notify": false, "confidence": 65}}
+{"message": "Let's go for a walk after work?", "results": {"urgency": 20, "necessity": 30, "want": 75, "informational": 25, "planning": 60, "career-related": 0, "notify": false, "confidence": 70}}
+{"message": "We have a doctor's appointment tomorrow at 10 AM.", "results": {"urgency": 70, "necessity": 80, "want": 20, "informational": 90, "planning": 100, "career-related": 0, "notify": true, "confidence": 95}}
+{"message": "Don't forget to water the plants today.", "results": {"urgency": 50, "necessity": 70, "want": 30, "informational": 40, "planning": 60, "career-related": 0, "notify": true, "confidence": 85}}
+{"message": "The exam results will be released at 5 PM.", "results": {"urgency": 40, "necessity": 60, "want": 70, "informational": 85, "planning": 50, "career-related": 100, "notify": true, "confidence": 85}}
+{"message": "I’m running a bit late, see you in 10 minutes.", "results": {"urgency": 40, "necessity": 50, "want": 60, "informational": 70, "planning": 40, "career-related": 0, "notify": true, "confidence": 80}}
+{"message": "Do you want to watch a movie tonight?", "results": {"urgency": 15, "necessity": 25, "want": 80, "informational": 30, "planning": 40, "career-related": 0, "notify": false, "confidence": 70}}
+{"message": "We’re meeting at the park at 5 PM.", "results": {"urgency": 50, "necessity": 60, "want": 50, "informational": 70, "planning": 80, "career-related": 0, "notify": true, "confidence": 85}}
+{"message": "The car is ready for pickup.", "results": {"urgency": 30, "necessity": 60, "want": 30, "informational": 80, "planning": 50, "career-related": 0, "notify": false, "confidence": 75}}
+{"message": "Are you free this weekend?", "results": {"urgency": 20, "necessity": 30, "want": 75, "informational": 40, "planning": 60, "career-related": 0, "notify": false, "confidence": 70}}
+{"message": "Can we reschedule our dinner to tomorrow?", "results": {"urgency": 50, "necessity": 60, "want": 70, "informational": 80, "planning": 90, "career-related": 0, "notify": true, "confidence": 85}}
+{"message": "I sent you an email with the details.", "results": {"urgency": 20, "necessity": 40, "want": 60, "informational": 75, "planning": 50, "career-related": 100, "notify": true, "confidence": 80}}
+{"message": "The flight is delayed by an hour.", "results": {"urgency": 60, "necessity": 80, "want": 40, "informational": 90, "planning": 75, "career-related": 0, "notify": true, "confidence": 85}}
+{"message": "Dinner is ready!", "results": {"urgency": 5, "necessity": 20, "want": 70, "informational": 30, "planning": 10, "career-related": 0, "notify": false, "confidence": 60}}
+{"message": "Let’s have a video call tonight.", "results": {"urgency": 25, "necessity": 40, "want": 80, "informational": 20, "planning": 60, "career-related": 0, "notify": false, "confidence": 75}}
