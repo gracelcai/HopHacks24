@@ -1,0 +1,33 @@
+{"prompt": "Meeting scheduled for tomorrow at 10 AM", "completion": "{'urgency': 85, 'necessity': 90, 'want': 50, 'informational': 80, 'planning': 95, 'career-related': 85, 'notify': true, 'confidence': 95}"}
+{"prompt": "Can we grab lunch today?", "completion": "{'urgency': 40, 'necessity': 30, 'want': 70, 'informational': 25, 'planning': 20, 'career-related': 10, 'notify': false, 'confidence': 60}"}
+{"prompt": "Project deadline approaching. Final submission by EOD", "completion": "{'urgency': 95, 'necessity': 100, 'want': 20, 'informational': 90, 'planning': 85, 'career-related': 90, 'notify': true, 'confidence': 98}"}
+{"prompt": "Team meeting moved to next week", "completion": "{'urgency': 60, 'necessity': 50, 'want': 30, 'informational': 70, 'planning': 80, 'career-related': 75, 'notify': true, 'confidence': 85}"}
+{"prompt": "Happy hour at 6 PM, join us!", "completion": "{'urgency': 25, 'necessity': 20, 'want': 80, 'informational': 15, 'planning': 10, 'career-related': 5, 'notify': false, 'confidence': 50}"}
+{"prompt": "Client presentation rescheduled to Friday", "completion": "{'urgency': 70, 'necessity': 85, 'want': 40, 'informational': 80, 'planning': 90, 'career-related': 85, 'notify': true, 'confidence': 90}"}
+{"prompt": "Free to chat?", "completion": "{'urgency': 20, 'necessity': 15, 'want': 60, 'informational': 10, 'planning': 5, 'career-related': 10, 'notify': false, 'confidence': 40}"}
+{"prompt": "Client feedback is in. Review before noon", "completion": "{'urgency': 80, 'necessity': 90, 'want': 30, 'informational': 85, 'planning': 75, 'career-related': 80, 'notify': true, 'confidence': 92}"}
+{"prompt": "Reminder: Quarterly performance review tomorrow", "completion": "{'urgency': 65, 'necessity': 75, 'want': 40, 'informational': 60, 'planning': 85, 'career-related': 95, 'notify': true, 'confidence': 88}"}
+{"prompt": "Coffee break at 3?", "completion": "{'urgency': 15, 'necessity': 10, 'want': 70, 'informational': 5, 'planning': 10, 'career-related': 5, 'notify': false, 'confidence': 30}"}
+{"prompt": "Standup meeting in 15 minutes", "completion": "{'urgency': 75, 'necessity': 80, 'want': 40, 'informational': 60, 'planning': 70, 'career-related': 65, 'notify': true, 'confidence': 90}"}
+{"prompt": "Report the status of the project", "completion": "{'urgency': 85, 'necessity': 95, 'want': 30, 'informational': 90, 'planning': 85, 'career-related': 80, 'notify': true, 'confidence': 94}"}
+{"prompt": "Game night tonight!", "completion": "{'urgency': 10, 'necessity': 5, 'want': 80, 'informational': 5, 'planning': 5, 'career-related': 0, 'notify': false, 'confidence': 25}"}
+{"prompt": "Quarterly budget report review", "completion": "{'urgency': 75, 'necessity': 85, 'want': 20, 'informational': 80, 'planning': 85, 'career-related': 90, 'notify': true, 'confidence': 93}"}
+{"prompt": "Meet up for a workout?", "completion": "{'urgency': 15, 'necessity': 10, 'want': 65, 'informational': 5, 'planning': 10, 'career-related': 0, 'notify': false, 'confidence': 45}"}
+{"prompt": "Need your approval on the budget", "completion": "{'urgency': 90, 'necessity': 95, 'want': 30, 'informational': 85, 'planning': 85, 'career-related': 90, 'notify': true, 'confidence': 97}"}
+{"prompt": "Office party on Friday!", "completion": "{'urgency': 20, 'necessity': 10, 'want': 70, 'informational': 15, 'planning': 20, 'career-related': 5, 'notify': false, 'confidence': 55}"}
+{"prompt": "Team needs your prompt on the strategy document", "completion": "{'urgency': 85, 'necessity': 90, 'want': 35, 'informational': 80, 'planning': 85, 'career-related': 80, 'notify': true, 'confidence': 93}"}
+{"prompt": "Dinner plans for tonight?", "completion": "{'urgency': 30, 'necessity': 20, 'want': 60, 'informational': 15, 'planning': 10, 'career-related': 5, 'notify': false, 'confidence': 45}"}
+{"prompt": "New project kickoff meeting", "completion": "{'urgency': 75, 'necessity': 85, 'want': 50, 'informational': 70, 'planning': 90, 'career-related': 85, 'notify': true, 'confidence': 92}"}
+{"prompt": "Going to the movies this weekend, want to join?", "completion": "{'urgency': 15, 'necessity': 10, 'want': 75, 'informational': 5, 'planning': 10, 'career-related': 0, 'notify': false, 'confidence': 35}"}
+{"prompt": "Help needed with sales pitch prep", "completion": "{'urgency': 85, 'necessity': 90, 'want': 45, 'informational': 80, 'planning': 85, 'career-related': 85, 'notify': true, 'confidence': 95}"}
+{"prompt": "Morning meeting delayed by an hour", "completion": "{'urgency': 50, 'necessity': 45, 'want': 20, 'informational': 60, 'planning': 75, 'career-related': 65, 'notify': true, 'confidence': 80}"}
+{"prompt": "Can we reschedule our call?", "completion": "{'urgency': 40, 'necessity': 30, 'want': 50, 'informational': 35, 'planning': 45, 'career-related': 40, 'notify': true, 'confidence': 70}"}
+{"prompt": "Customer follow-up required today", "completion": "{'urgency': 90, 'necessity': 95, 'want': 35, 'informational': 85, 'planning': 80, 'career-related': 90, 'notify': true, 'confidence': 96}"}
+{"prompt": "Brunch on Sunday?", "completion": "{'urgency': 20, 'necessity': 15, 'want': 75, 'informational': 10, 'planning': 10, 'career-related': 5, 'notify': false, 'confidence': 45}"}
+{"prompt": "Marketing meeting next Monday", "completion": "{'urgency': 65, 'necessity': 70, 'want': 40, 'informational': 60, 'planning': 85, 'career-related': 80, 'notify': true, 'confidence': 85}"}
+{"prompt": "Let's catch up soon", "completion": "{'urgency': 10, 'necessity': 5, 'want': 60, 'informational': 10, 'planning': 5, 'career-related': 0, 'notify': false, 'confidence': 35}"}
+{"prompt": "Reminder: Submit timesheet by Friday", "completion": "{'urgency': 70, 'necessity': 85, 'want': 20, 'informational': 75, 'planning': 70, 'career-related': 80, 'notify': true, 'confidence': 88}"}
+{"prompt": "Brainstorming session at 2 PM", "completion": "{'urgency': 70, 'necessity': 80, 'want': 55, 'informational': 65, 'planning': 85, 'career-related': 75, 'notify': true, 'confidence': 90}"}
+{"prompt": "Quick chat?", "completion": "{'urgency': 20, 'necessity': 15, 'want': 50, 'informational': 10, 'planning': 10, 'career-related': 10, 'notify': false, 'confidence': 40}"}
+{"prompt": "Investor meeting rescheduled to next week", "completion": "{'urgency': 75, 'necessity': 85, 'want': 30, 'informational': 75, 'planning': 90, 'career-related': 85, 'notify': true, 'confidence': 90}"}
+{"prompt": "Weekly sync postponed", "completion": "{'urgency': 60, 'necessity': 55, 'want': 25, 'informational': 70, 'planning': 75, 'career-related': 65, 'notify': true, 'confidence': 80}"}

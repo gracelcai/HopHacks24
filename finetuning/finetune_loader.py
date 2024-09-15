@@ -10,6 +10,6 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Use for updating fine-tuning data
 client.files.create(
-  file=open("file-data.jsonl", "rb"),
+  file=open("finetuning/finetuning-data.jsonl", "rb"),
   purpose="fine-tune"
 )
