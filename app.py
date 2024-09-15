@@ -5,17 +5,7 @@ import json
 import pymongo
 
 def get_opinion_data(input, msg_json):
-  col1, col2, col3, col4 = st.columns([0.65, 1, 1, 3])
-
-  with col1:
-    if st.button('Agree'):
-      pass
-      # st.write(concat_bs(input, msg_json, True))
-  with col2:
-    if st.button('Disagree'):
-      pass
-      # st.write(concat_bs(input, msg_json, False))
-  st.write(concat_bs(input, msg_json, False))
+  pass
 
 def does_a_brotha_agree(agree, notify):
   if agree:
@@ -44,7 +34,7 @@ def get_input(option):
       percentage = message_json[f"{category}"]
       st.progress(percentage, text=f"{category}: {percentage}%")
       
-    get_opinion_data(blob, message_json)
+    return get_opinion_data(blob, message_json)
 
 file = open('defs.json', 'r')
 data = json.load(file)
@@ -63,6 +53,8 @@ if (option == 'Custom'):
     if (custom_mode_def != ''):
       new = {custom_mode: custom_mode_def}
       data["modes"].update(new)
-      get_input(custom_mode)
+      data = get_input(custom_mode)
 else:
-  get_input(option)
+  data = get_input(option)
+
+print(data)
