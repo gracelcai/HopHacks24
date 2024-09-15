@@ -3,6 +3,16 @@ from textblob import TextBlob
 import analyzer
 import json
 
+def get_opinion_data():
+  col1, col2, col3, col4 = st.columns([0.65, 1, 1, 3])
+
+  with col1:
+    if st.button('Agree'):
+      pass
+  with col2:
+    if st.button('Disagree'):
+      pass
+  
 def get_input(option):
   text = st.text_area("Please enter your text")
 
@@ -20,6 +30,8 @@ def get_input(option):
     for category, definition in data["categories"].items():
       percentage = message_json[f"{category}"]
       st.progress(percentage, text=f"{category}: {percentage}%")
+      
+    get_opinion_data()
 
 file = open('defs.json', 'r')
 data = json.load(file)
