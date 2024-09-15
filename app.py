@@ -23,7 +23,7 @@ if st.button("Analyze the Sentiment"):
   content_trimmed = message_content[7:-3]
   message_json = json.loads(content_trimmed)
   
-  st.write(f"Sent: {message_json["notify"]["yes"]}")
+  st.write(f"Notify: {message_json['notify']}, Confidence: {message_json['confidence']}%")
 
   for category, definition in data["categories"].items():
     percentage = message_json[f"{category}"]
