@@ -1,12 +1,39 @@
+import pymongo.mongo_client
 import streamlit as st
 from textblob import TextBlob
 import analyzer
 import json
 import pymongo
 
-def concat_bs(input, msg_json, agree):
-  return f'{{"messages": [{{"role": "user", "content": "{input}"}}, {{"role": "assistant", "content": {{"urgency": {msg_json["urgency"]}, "necessity": {msg_json["necessity"]}, "want": {msg_json["want"]}, "informational": {msg_json["informational"]}, "planning": {msg_json["planning"]}, "career-related": {msg_json["career-related"]}, "notify": {agree == msg_json["notify"]}, "confidence": {msg_json["confidence"]}}}]}}'
 
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["trainingdb"]
+mycol = mydb["responses"]
+
+def concat_bs(input, msg_json, agree):
+  # return f'{{"messages": [{{"role": "user", "content": "{input}"}}, {{"role": "assistant", "content": {{"urgency": {msg_json["urgency"]}, "necessity": {msg_json["necessity"]}, "want": {msg_json["want"]}, "informational": {msg_json["informational"]}, "planning": {msg_json["planning"]}, "career-related": {msg_json["career-related"]}, "notify": {agree == msg_json["notify"]}, "confidence": {msg_json["confidence"]}}}]}}'
+  document = {
+        "messages": [
+            {
+                "role": "user",
+                "content": input
+            },
+            {
+                "role": "assistant",
+                "content": {
+                    "urgency": msg_json["urgency"],
+                    "necessity": msg_json["necessity"],
+                    "want": msg_json["want"],
+                    "informational": msg_json["informational"],
+                    "planning": msg_json["planning"],
+                    "career-related": msg_json["career-related"],
+                    "notify": agree == msg_json["notify"],
+                    "confidence": msg_json["confidence"]
+                }
+            }
+        ]
+    }
+  return document
 def get_input(option):
   text = st.text_area("Please enter your text")
   st.session_state.text = text
@@ -56,11 +83,13 @@ else:
   
 if st.session_state.analyzed:  
   if st.button("Agree"):
-    print(concat_bs(st.session_state.text, st.session_state.message_json, True))
+    ins_data = concat_bs(st.session_state.text, st.session_state.message_json, True)
+    mycol.insert_one(ins_data)
     st.session_state.analyzed = False
     st.rerun()
   
   if st.button("Disagree"):
-    print(concat_bs(st.session_state.text,st.session_state.message_json, False))
+    ins_data = concat_bs(st.session_state.text,st.session_state.message_json, False)
+    mycol.insert_one(ins_data)
     st.session_state.analyzed = False
     st.rerun()
