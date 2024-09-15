@@ -2,4 +2,4 @@ old/
 .env
 env
 key.txt
-__pycahce__/
+__pycache__/
