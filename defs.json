@@ -5,7 +5,7 @@
         "want": "Is the user requesting something they want but don't necessarily need? These are optional and non urgent",
         "informational": "Is this message purely informational? This could include a status update or news",
         "planning": "Is the message related to scheduling or organizing an event, meeting, or other future activity?",
-        "work/school related": "Is the message related to work, school, or other academic/professional activities?"
+        "career-related": "Is the message related to work, school, or other academic/professional activities?"
     },
 
     "modes": {
