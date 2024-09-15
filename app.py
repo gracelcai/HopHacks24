@@ -7,7 +7,7 @@ file = open('defs.json', 'r')
 data = json.load(file)
 
 st.title("Text Message Sentiment Analysis") 
-st.text("This webapp evaluates whether the receiver of a text message should be notified based on the urgency of the message.")
+st.text("This webapp evaluates whether the receiver of a text message should be notified\nbased on the urgency of the message.")
 
 option = st.selectbox(
      'Select Notification Mode',
