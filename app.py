@@ -4,37 +4,34 @@ import analyzer
 import json
 import pymongo
 
-def get_opinion_data(input, msg_json):
-  pass
-
-def does_a_brotha_agree(agree, notify):
-  if agree:
-    notify
-  else:
-    not notify
-
 def concat_bs(input, msg_json, agree):
-  return f'{{"messages": [{{"role": "user", "content": "{input}"}}, {{"role": "assistant", "content": {{"urgency": {msg_json["urgency"]}, "necessity": {msg_json["necessity"]}, "want": {msg_json["want"]}, "informational": {msg_json["informational"]}, "planning": {msg_json["planning"]}, "career-related": {msg_json["career-related"]}, "notify": {does_a_brotha_agree(agree, msg_json["notify"])}, "confidence": {msg_json["confidence"]}}}]}}'
+  return f'{{"messages": [{{"role": "user", "content": "{input}"}}, {{"role": "assistant", "content": {{"urgency": {msg_json["urgency"]}, "necessity": {msg_json["necessity"]}, "want": {msg_json["want"]}, "informational": {msg_json["informational"]}, "planning": {msg_json["planning"]}, "career-related": {msg_json["career-related"]}, "notify": {agree == msg_json["notify"]}, "confidence": {msg_json["confidence"]}}}]}}'
 
 def get_input(option):
   text = st.text_area("Please enter your text")
+  st.session_state.text = text
 
-  if st.button("Analyze the Sentiment"): 
-    blob = TextBlob(text) 
-      
+  analyze_button = st.button("Analyze the Sentiment")
+  if analyze_button: 
+    blob = TextBlob(text)
+        
     result = analyzer.get_results(blob, option, data)
       
     message_content = result.choices[0].message.content
     content_trimmed = message_content[7:-3]
     message_json = json.loads(content_trimmed)
+    st.session_state.message_json = message_json
     
     st.write(f"Notify: {message_json['notify']}, Confidence: {message_json['confidence']}%")
 
     for category, definition in data["categories"].items():
       percentage = message_json[f"{category}"]
       st.progress(percentage, text=f"{category}: {percentage}%")
-      
-    return get_opinion_data(blob, message_json)
+    
+    st.session_state.analyzed = True
+    
+if 'analyzed' not in st.session_state:
+  st.session_state.analyzed = False
 
 file = open('defs.json', 'r')
 data = json.load(file)
@@ -55,6 +52,15 @@ if (option == 'Custom'):
       data["modes"].update(new)
       data = get_input(custom_mode)
 else:
-  data = get_input(option)
-
-print(data)
+  data = get_input(option) 
+  
+if st.session_state.analyzed:  
+  if st.button("Agree"):
+    print(concat_bs(st.session_state.text, st.session_state.message_json, True))
+    st.session_state.analyzed = False
+    st.rerun()
+  
+  if st.button("Disagree"):
+    print(concat_bs(st.session_state.text,st.session_state.message_json, False))
+    st.session_state.analyzed = False
+    st.rerun()
